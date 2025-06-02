@@ -28,6 +28,6 @@ flutter:
   plugin:
     platforms:
       android:
-        default_package: com.lugalokinho.system_monitor_controller_android
+        default_package: system_monitor_controller_android
       ios:
         pluginClass: SystemMonitorControllerPlugin

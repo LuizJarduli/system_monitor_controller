@@ -238,6 +238,20 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  system_monitor_controller_android:
+    dependency: transitive
+    description:
+      path: "../../system_monitor_controller_android"
+      relative: true
+    source: path
+    version: "0.0.1+1"
+  system_monitor_controller_platform_interface:
+    dependency: transitive
+    description:
+      path: "../../system_monitor_controller_platform_interface"
+      relative: true
+    source: path
+    version: "1.0.0+1"
   term_glyph:
     dependency: transitive
     description:
@@ -280,4 +294,4 @@ packages:
     version: "3.1.0"
 sdks:
   dart: ">=3.7.2 <4.0.0"
-  flutter: ">=3.18.0-18.0.pre.54"
+  flutter: ">=3.20.0"
