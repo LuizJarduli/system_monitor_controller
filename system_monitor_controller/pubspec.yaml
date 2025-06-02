@@ -11,6 +11,9 @@ dependencies:
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.0.2
+  system_monitor_controller_platform_interface:
+    # FIXME(lugalokinho): change to published package when its done
+    path: ../system_monitor_controller_platform_interface
 
 dev_dependencies:
   flutter_test:

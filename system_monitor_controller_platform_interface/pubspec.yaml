@@ -1,0 +1,21 @@
+name: system_monitor_controller_platform_interface
+description: A common platform interface for the system_monitor_controller plugin.
+repository: https://github.com/lugalokinho/system_monitor_controller/system_monitor_controller_platform_interface
+version: 1.0.0+1
+# FIXME(lugalokinho): only when its done, remove this line
+publish_to: none
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+  flutter: ">=3.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  very_good_analysis: ^2.0.0

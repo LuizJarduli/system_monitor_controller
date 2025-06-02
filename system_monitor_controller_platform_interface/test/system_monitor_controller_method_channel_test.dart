@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:system_monitor_controller/system_monitor_controller_method_channel.dart';
+import 'package:system_monitor_controller_platform_interface/system_monitor_controller_method_channel.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -11,11 +11,11 @@ void main() {
   setUp(() {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
         .setMockMethodCallHandler(
-          channel,
-          (MethodCall methodCall) async {
-            return '42';
-          },
-        );
+      channel,
+      (MethodCall methodCall) async {
+        return '42';
+      },
+    );
   });
 
   tearDown(() {

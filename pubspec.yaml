@@ -1,0 +1,11 @@
+name: system_monitor_controller_monorepo
+description: "A monorepo for the system_monitor_controller plugin"
+version: 0.0.1
+homepage: https://github.com/LuizJarduli/system_monitor_controller
+publish_to: none
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+
+dev_dependencies:
+  husky: ^0.1.7

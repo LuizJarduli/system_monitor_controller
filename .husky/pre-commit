@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+flutter analyze
+
+cd system_monitor_controller && flutter test && cd ..
+cd system_monitor_controller_platform_interface && flutter test && cd ..

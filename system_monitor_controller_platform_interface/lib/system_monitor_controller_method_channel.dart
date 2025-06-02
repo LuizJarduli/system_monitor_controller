@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-import 'package:system_monitor_controller/system_monitor_controller_platform_interface.dart';
+import 'package:system_monitor_controller_platform_interface/system_monitor_controller_platform_interface.dart';
 
 /// An implementation of [SystemMonitorControllerPlatform] that uses
 /// method channels.

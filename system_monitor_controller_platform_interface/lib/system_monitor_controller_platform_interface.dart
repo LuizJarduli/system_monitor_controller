@@ -1,6 +1,6 @@
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
-import 'package:system_monitor_controller/system_monitor_controller_method_channel.dart';
+import 'package:system_monitor_controller_platform_interface/system_monitor_controller_method_channel.dart';
 
 abstract class SystemMonitorControllerPlatform extends PlatformInterface {
   /// Constructs a SystemMonitorControllerPlatform.
