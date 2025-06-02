@@ -1,4 +1,16 @@
-include: package:flutter_lints/flutter.yaml
+include: 
+  - package:flutter_lints/flutter.yaml
+  - package:very_good_analysis/analysis_options.yaml
 
-# Additional information about this file can be found at
-# https://dart.dev/guides/language/analysis-options
+linter:
+  rules:  
+    prefer_single_quotes: true
+    public_member_api_docs: false
+
+formatter:
+  trailing_commas: preserve
+  page_width: 80
+
+analyzer:
+  exclude:
+    - pubspec.yaml

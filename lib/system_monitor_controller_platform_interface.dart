@@ -1,6 +1,6 @@
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
-import 'system_monitor_controller_method_channel.dart';
+import 'package:system_monitor_controller/system_monitor_controller_method_channel.dart';
 
 abstract class SystemMonitorControllerPlatform extends PlatformInterface {
   /// Constructs a SystemMonitorControllerPlatform.
@@ -8,7 +8,8 @@ abstract class SystemMonitorControllerPlatform extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static SystemMonitorControllerPlatform _instance = MethodChannelSystemMonitorController();
+  static SystemMonitorControllerPlatform _instance =
+      MethodChannelSystemMonitorController();
 
   /// The default instance of [SystemMonitorControllerPlatform] to use.
   ///
@@ -16,8 +17,8 @@ abstract class SystemMonitorControllerPlatform extends PlatformInterface {
   static SystemMonitorControllerPlatform get instance => _instance;
 
   /// Platform-specific implementations should set this with their own
-  /// platform-specific class that extends [SystemMonitorControllerPlatform] when
-  /// they register themselves.
+  /// platform-specific class that extends [SystemMonitorControllerPlatform]
+  /// when they register themselves.
   static set instance(SystemMonitorControllerPlatform instance) {
     PlatformInterface.verifyToken(instance, _token);
     _instance = instance;
