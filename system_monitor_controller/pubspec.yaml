@@ -17,6 +17,9 @@ dependencies:
   system_monitor_controller_android:
     # FIXME(lugalokinho): change to published package when its done
     path: ../system_monitor_controller_android
+  system_monitor_controller_ios:
+    # FIXME(lugalokinho): change to published package when its done
+    path: ../system_monitor_controller_ios
 
 dev_dependencies:
   flutter_test:
@@ -30,4 +33,4 @@ flutter:
       android:
         default_package: system_monitor_controller_android
       ios:
-        pluginClass: SystemMonitorControllerPlugin
+        default_package: system_monitor_controller_ios

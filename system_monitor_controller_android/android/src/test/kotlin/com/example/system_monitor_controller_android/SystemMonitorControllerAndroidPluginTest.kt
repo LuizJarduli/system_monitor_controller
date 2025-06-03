@@ -1,4 +1,4 @@
-package com.example.system_monitor_controller_android
+package com.lugalokinho.system_monitor_controller_android
 
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel

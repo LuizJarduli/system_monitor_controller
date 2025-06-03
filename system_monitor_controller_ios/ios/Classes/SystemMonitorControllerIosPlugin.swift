@@ -1,10 +1,10 @@
 import Flutter
 import UIKit
 
-public class SystemMonitorControllerPlugin: NSObject, FlutterPlugin {
+public class SystemMonitorControllerIosPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "system_monitor_controller", binaryMessenger: registrar.messenger())
-    let instance = SystemMonitorControllerPlugin()
+    let instance = SystemMonitorControllerIosPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 

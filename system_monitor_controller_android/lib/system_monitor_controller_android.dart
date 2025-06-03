@@ -9,6 +9,10 @@ class SystemMonitorControllerAndroid extends SystemMonitorControllerPlatform {
 
   final MethodChannelSystemMonitorController _channelApi;
 
+  static void registerWith() {
+    SystemMonitorControllerPlatform.instance = SystemMonitorControllerAndroid();
+  }
+
   @override
   Future<String?> getPlatformVersion() {
     return _channelApi.getPlatformVersion();

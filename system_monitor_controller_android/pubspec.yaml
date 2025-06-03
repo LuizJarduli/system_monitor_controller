@@ -3,7 +3,6 @@ description: "Android implementation of the system_monitor_controller plugin"
 version: 0.0.1+1
 # FIXME(lugalokinho): only when its done, remove this line
 publish_to: none
-
 homepage: https://github.com/LuizJarduli/system_monitor_controller/system_monitor_controller_android
 
 environment:

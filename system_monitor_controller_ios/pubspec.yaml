@@ -1,0 +1,32 @@
+name: system_monitor_controller_ios
+description: "iOS implementation of the system_monitor_controller plugin"
+version: 0.0.1+1
+# FIXME(lugalokinho): only when its done, remove this line
+publish_to: none
+homepage: https://github.com/LuizJarduli/system_monitor_controller/system_monitor_controller_ios
+
+environment:
+  sdk: ^3.8.0
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  system_monitor_controller_platform_interface:
+    # FIXME(lugalokinho): change to published package when its done
+    path: ../system_monitor_controller_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  very_good_analysis: ^2.0.0
+
+
+flutter:
+  plugin:
+    implements: system_monitor_controller
+    platforms:
+      ios:
+        pluginClass: SystemMonitorControllerIosPlugin
+        dartPluginClass: SystemMonitorControllerIos

@@ -1,4 +1,4 @@
-package com.example.system_monitor_controller_android
+package com.lugalokinho.system_monitor_controller_android
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
@@ -15,7 +15,7 @@ class SystemMonitorControllerAndroidPlugin: FlutterPlugin, MethodCallHandler {
   private lateinit var channel : MethodChannel
 
   override fun onAttachedToEngine(flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "system_monitor_controller_android")
+    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "system_monitor_controller")
     channel.setMethodCallHandler(this)
   }
 
